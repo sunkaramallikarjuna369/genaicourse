@@ -29,7 +29,7 @@ Expert Mentorship - Interview + career guidance
 ## 📊 Course Overview
 
 Duration: 75 Hours
-Daily Time: 1.5 Hours (or flexible)
+Daily Time: 1 Hour (or flexible) (or flexible)
 Total Coverage: 75 Hours of Deep Learning
 Projects: 6+ Enterprise-Grade Projects
 Target: Serious learners wanting professional skills
@@ -235,7 +235,7 @@ Prerequisites:
 - Strong Python knowledge
 - Basic ML understanding (helpful)
 - System design knowledge (helpful)
-- 1.5 hours per day commitment
+- 1 Hour per day commitment
 
 ---
 
@@ -298,7 +298,7 @@ Week 10 (67.5-75 hrs): Capstone + Career
 Start Date: Whenever you're ready! Self-paced.
 
 Time Commitment: 75 hours total
-- Option 1: 1.5 hours/day for 50 days
+- Option 1: 1 Hour/day for 50 days
 - Option 2: 3 hours/day for 25 days  
 - Option 3: Flexible based on your schedule
 
