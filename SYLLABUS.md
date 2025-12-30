@@ -1,237 +1,709 @@
-# GenAI 50-Day Course - Complete Syllabus
+# GenAI 75-Day Course - Complete Detailed Syllabus
 
 ## Course Overview
 
-This is a fast-track 50-day course (1 hour per day) designed for BTech freshers with no prior knowledge. By the end, you will be ready for GenAI developer job interviews.
+This is the **detailed 75-day course** (1 hour per day) designed for BTech freshers with no prior knowledge. This version provides more in-depth explanations, additional exercises, and extended practice compared to the 50-day fast-track version.
+
+**Key Differences from 50-Day Version:**
+- More time for each concept
+- Multiple exercises per topic
+- Review and practice days
+- Extended project work
+- Comprehensive interview preparation
 
 ---
 
-## Module 0: Setup & Python Essentials (Days 1-3)
+## Module 0: Setup & Python Essentials (Days 1-5)
 
-### Day 1: Welcome & Environment Setup
-**What you'll learn:** How to set up your computer for AI development
+### Day 1: Welcome & Course Introduction
+**What you'll learn:** Understanding the course and your GenAI journey
 
 **Topics:**
-- What is Generative AI? (Simple explanation with examples)
-- Why learn GenAI? (Job opportunities)
-- Installing Python on your computer
-- Installing VS Code (code editor)
-- Creating your first Python file
+- What is this course about?
+- What will you be able to do after 75 days?
+- How to get the most out of this course
+- Setting expectations and goals
+- Overview of the GenAI industry
 
-**Simple Exercise:**
-- Install Python and VS Code
-- Create a file called `hello.py`
-- Write: `print("Hello, I am learning GenAI!")`
-- Run it and see the output
+**Detailed Explanation:**
+
+Generative AI (GenAI) is a type of artificial intelligence that can CREATE new content. Unlike traditional AI that only analyzes or classifies data, GenAI can generate text (like ChatGPT writing essays, emails, code), images (like DALL-E or Midjourney creating pictures), audio (like AI generating music or voice), and video (like AI creating short clips).
+
+The GenAI market is growing rapidly. Companies need developers who can build applications using LLM APIs, create chatbots and virtual assistants, implement RAG systems for enterprise data, and deploy and maintain AI applications.
+
+**Simple Exercise 1:**
+Write down your answers to these questions:
+1. What do you want to build with GenAI?
+2. What type of job do you want after this course?
+3. How many hours per week can you dedicate to practice?
+
+**Simple Exercise 2:**
+Try these AI tools (free versions):
+- ChatGPT: https://chat.openai.com
+- Google Gemini: https://gemini.google.com
+- Claude: https://claude.ai
+
+Ask each one: "Explain what you are in 3 simple sentences"
 
 ---
 
-### Day 2: Python Basics - Part 1
-**What you'll learn:** Basic Python programming
+### Day 2: Environment Setup - Part 1
+**What you'll learn:** Installing Python on your computer
 
 **Topics:**
-- Variables (storing information)
-- Data types (numbers, text, true/false)
-- Print statements (showing output)
-- Taking input from user
-- Simple math operations
+- What is Python and why use it for AI?
+- Downloading Python
+- Installing Python step-by-step
+- Verifying installation
 
-**Simple Exercise:**
+**Detailed Explanation:**
+
+Python is the most popular programming language for AI because it is easy to learn with simple syntax that reads like English, has a huge ecosystem with thousands of AI libraries available, is the industry standard used by all major AI companies, and has a great community making it easy to find help and tutorials.
+
+**Step-by-Step Installation (Windows):**
+1. Open your browser and go to: https://www.python.org/downloads/
+2. Click the big yellow button "Download Python 3.12.x"
+3. Open the downloaded file
+4. VERY IMPORTANT: Check the box that says "Add Python to PATH"
+5. Click "Install Now"
+6. Wait for installation to complete
+7. Click "Close"
+
+**Simple Exercise 1:**
+Verify Python is installed correctly:
+```bash
+python --version
+```
+You should see: Python 3.12.x
+
+**Simple Exercise 2:**
+Try Python in interactive mode:
 ```python
-# Create a program that asks for your name and age
-name = input("What is your name? ")
-age = input("What is your age? ")
-print("Hello " + name + "! You are " + age + " years old.")
+>>> print("Hello!")
+>>> 2 + 2
+>>> exit()
 ```
 
 ---
 
-### Day 3: Python Basics - Part 2
-**What you'll learn:** Lists, loops, and functions
+### Day 3: Environment Setup - Part 2
+**What you'll learn:** Installing VS Code and setting it up for Python
 
 **Topics:**
+- What is VS Code?
+- Installing VS Code
+- Installing Python extension
+- Creating your first Python file
+
+**Detailed Explanation:**
+
+VS Code (Visual Studio Code) is a free code editor made by Microsoft. It's the most popular editor for Python development because it is free and open source, lightweight but powerful, has great Python support, has a built-in terminal, and has extensions for everything.
+
+**Step-by-Step Installation:**
+1. Go to: https://code.visualstudio.com/
+2. Click "Download for Windows/Mac"
+3. Run the installer
+4. Accept the license agreement
+5. Keep default options, click Next
+6. Click Install
+7. Launch VS Code
+
+**Simple Exercise 1:**
+Create your first Python file:
+```python
+# This is my first Python program!
+print("Hello, World!")
+print("I am learning GenAI!")
+print("This is exciting!")
+```
+
+**Simple Exercise 2:**
+Experiment with print:
+```python
+print("My name is [Your Name]")
+print("I am a BTech student")
+print("I want to become a GenAI developer")
+print("=" * 30)
+```
+
+---
+
+### Day 4: Python Basics - Variables and Data Types
+**What you'll learn:** Storing and using information in Python
+
+**Topics:**
+- What are variables?
+- Different types of data
+- Naming rules for variables
+- Basic operations
+
+**Detailed Explanation:**
+
+A variable is like a labeled box where you store information. You give it a name, and Python remembers what's inside.
+
+```python
+name = "Rahul"      # This stores the text "Rahul"
+age = 20            # This stores the number 20
+height = 5.8        # This stores a decimal number
+is_student = True   # This stores True or False
+```
+
+**Data Types in Python:**
+- str (string): Text like "Hello", 'World'
+- int (integer): Whole numbers like 10, -5, 0
+- float: Decimal numbers like 3.14, -2.5
+- bool (boolean): True or False
+
+**Simple Exercise 1:**
+Create variables for yourself:
+```python
+my_name = "Your Name"
+my_age = 20
+my_college = "Your College Name"
+my_branch = "Computer Science"
+my_cgpa = 8.5
+
+print("Name:", my_name)
+print("Age:", my_age)
+print("College:", my_college)
+print("Branch:", my_branch)
+print("CGPA:", my_cgpa)
+```
+
+**Simple Exercise 2:**
+Practice math operations:
+```python
+a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Integer Division:", a // b)
+print("Remainder:", a % b)
+print("Power:", a ** b)
+```
+
+**Simple Exercise 3:**
+String operations:
+```python
+first_name = "Rahul"
+last_name = "Kumar"
+
+full_name = first_name + " " + last_name
+print("Full name:", full_name)
+print("Name length:", len(full_name))
+print("Uppercase:", full_name.upper())
+print("Lowercase:", full_name.lower())
+```
+
+---
+
+### Day 5: Python Basics - Input, Lists, and Loops
+**What you'll learn:** Getting user input, storing multiple items, and repeating actions
+
+**Topics:**
+- Taking input from users
 - Lists (storing multiple items)
 - For loops (repeating actions)
 - If-else (making decisions)
-- Functions (reusable code blocks)
+- Functions (reusable code)
 
-**Simple Exercise:**
+**Detailed Explanation:**
+
+Getting User Input:
 ```python
-# Create a list of your favorite foods and print each one
-foods = ["pizza", "biryani", "dosa"]
-for food in foods:
-    print("I like " + food)
+name = input("What is your name? ")
+print("Hello,", name)
 
-# Create a simple function
+age = int(input("What is your age? "))
+print("Next year you will be", age + 1)
+```
+
+Lists - Storing Multiple Items:
+```python
+fruits = ["apple", "banana", "mango"]
+print(fruits[0])  # apple
+print(fruits[-1]) # mango
+fruits.append("orange")
+print(len(fruits))  # 4
+```
+
+For Loops:
+```python
+for fruit in fruits:
+    print("I like", fruit)
+
+for i in range(5):
+    print("Number:", i)
+```
+
+If-Else:
+```python
+age = 18
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+```
+
+**Simple Exercise 1:**
+Create a simple calculator:
+```python
+print("=== Simple Calculator ===")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+elif operation == "*":
+    result = num1 * num2
+elif operation == "/":
+    result = num1 / num2
+else:
+    result = "Invalid operation"
+
+print("Result:", result)
+```
+
+**Simple Exercise 2:**
+Work with lists:
+```python
+movies = []
+movies.append(input("Enter movie 1: "))
+movies.append(input("Enter movie 2: "))
+movies.append(input("Enter movie 3: "))
+
+print("\nYour favorite movies:")
+for i, movie in enumerate(movies, 1):
+    print(f"{i}. {movie}")
+```
+
+**Simple Exercise 3:**
+Create functions:
+```python
 def greet(name):
-    return "Hello, " + name + "!"
+    return f"Hello, {name}! Welcome to GenAI course!"
 
-print(greet("Student"))
+def add_numbers(a, b):
+    return a + b
+
+def is_even(number):
+    return number % 2 == 0
+
+print(greet("Rahul"))
+print(add_numbers(5, 3))
+print(is_even(10))
 ```
 
 ---
 
-## Module 1: Web & Data Fundamentals (Days 4-7)
+## Module 1: Web & Data Fundamentals (Days 6-12)
 
-### Day 4: Working with Files
-**What you'll learn:** Reading and writing files in Python
+### Day 6: Working with Files - Reading
+**What you'll learn:** How to read data from files
 
 **Topics:**
-- Opening files
-- Reading file content
-- Writing to files
-- Working with text files
+- Why work with files?
+- Opening files in Python
+- Reading entire file
+- Reading line by line
 
-**Simple Exercise:**
+**Detailed Explanation:**
+
+Files are how we store data permanently. When you close your program, variables disappear, but files stay on your computer.
+
 ```python
-# Write to a file
-with open("my_notes.txt", "w") as file:
-    file.write("Today I learned about files in Python!")
-
-# Read from a file
-with open("my_notes.txt", "r") as file:
+# Read entire file
+with open("myfile.txt", "r") as file:
     content = file.read()
     print(content)
+
+# Read line by line
+with open("myfile.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+```
+
+**Simple Exercise 1:**
+Read and print a file:
+```python
+with open("sample.txt", "r") as file:
+    content = file.read()
+    print("File contents:")
+    print(content)
+    print(f"\nTotal characters: {len(content)}")
+```
+
+**Simple Exercise 2:**
+Count lines and words:
+```python
+with open("sample.txt", "r") as file:
+    lines = file.readlines()
+    total_lines = len(lines)
+    total_words = sum(len(line.split()) for line in lines)
+    
+    print(f"Total lines: {total_lines}")
+    print(f"Total words: {total_words}")
 ```
 
 ---
 
-### Day 5: JSON - The Language of APIs
-**What you'll learn:** Working with JSON data
+### Day 7: Working with Files - Writing
+**What you'll learn:** How to save data to files
 
 **Topics:**
-- What is JSON? (Data format used everywhere)
-- Reading JSON files
-- Creating JSON data
-- Converting between Python and JSON
+- Creating new files
+- Writing text to files
+- Appending to existing files
 
-**Simple Exercise:**
+**Simple Exercise 1:**
+Create a diary program:
+```python
+from datetime import datetime
+
+def add_diary_entry():
+    now = datetime.now()
+    date_str = now.strftime("%Y-%m-%d %H:%M")
+    
+    print("Write your diary entry:")
+    entry = input()
+    
+    with open("diary.txt", "a") as file:
+        file.write(f"\n--- {date_str} ---\n")
+        file.write(entry + "\n")
+    
+    print("Entry saved!")
+
+def read_diary():
+    try:
+        with open("diary.txt", "r") as file:
+            print(file.read())
+    except FileNotFoundError:
+        print("No diary entries yet!")
+
+choice = input("1. Add entry  2. Read diary: ")
+if choice == "1":
+    add_diary_entry()
+else:
+    read_diary()
+```
+
+---
+
+### Day 8: JSON - Understanding the Format
+**What you'll learn:** What JSON is and why it's important
+
+**Topics:**
+- What is JSON?
+- JSON syntax rules
+- JSON vs Python dictionaries
+
+**Detailed Explanation:**
+
+JSON (JavaScript Object Notation) is a way to store and exchange data. It's used everywhere - APIs send data in JSON, configuration files use JSON, databases store JSON, and AI models return JSON.
+
+```json
+{
+    "name": "Rahul",
+    "age": 20,
+    "is_student": true,
+    "subjects": ["Math", "Physics", "AI"]
+}
+```
+
+**Simple Exercise 1:**
+Understand JSON structure:
+```python
+student = {
+    "name": "Rahul Kumar",
+    "age": 20,
+    "college": "IIT Delhi",
+    "is_active": True,
+    "courses": ["AI", "ML", "Python"],
+    "grades": {"AI": 95, "ML": 88, "Python": 92}
+}
+
+print("Name:", student["name"])
+print("First course:", student["courses"][0])
+print("AI grade:", student["grades"]["AI"])
+```
+
+---
+
+### Day 9: JSON - Reading and Writing
+**What you'll learn:** Working with JSON files in Python
+
+**Topics:**
+- The json module
+- Reading JSON files
+- Writing JSON files
+
+**Simple Exercise 1:**
+Create and save student data:
 ```python
 import json
 
-# Create a dictionary (like JSON)
-student = {
-    "name": "Rahul",
-    "age": 20,
-    "subjects": ["Math", "Physics", "AI"]
-}
+students = [
+    {"name": "Rahul", "age": 20, "marks": 85},
+    {"name": "Priya", "age": 21, "marks": 92},
+    {"name": "Amit", "age": 20, "marks": 78}
+]
 
-# Convert to JSON string
-json_string = json.dumps(student)
-print(json_string)
+with open("students.json", "w") as file:
+    json.dump(students, file, indent=4)
+    print("Data saved to students.json")
 
-# Convert back to Python
-data = json.loads(json_string)
-print(data["name"])
+with open("students.json", "r") as file:
+    loaded_students = json.load(file)
+    
+print("\nLoaded students:")
+for student in loaded_students:
+    print(f"  {student['name']}: {student['marks']} marks")
+```
+
+**Simple Exercise 2:**
+Build a contact book:
+```python
+import json
+
+def load_contacts():
+    try:
+        with open("contacts.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+
+def save_contacts(contacts):
+    with open("contacts.json", "w") as file:
+        json.dump(contacts, file, indent=4)
+
+def add_contact(name, phone, email):
+    contacts = load_contacts()
+    contacts.append({"name": name, "phone": phone, "email": email})
+    save_contacts(contacts)
+    print(f"Added {name}")
+
+def show_contacts():
+    contacts = load_contacts()
+    if not contacts:
+        print("No contacts yet!")
+        return
+    
+    print("\n=== Contacts ===")
+    for i, contact in enumerate(contacts, 1):
+        print(f"{i}. {contact['name']} - {contact['phone']}")
+
+add_contact("Rahul", "9876543210", "rahul@email.com")
+show_contacts()
 ```
 
 ---
 
-### Day 6: Making API Calls
-**What you'll learn:** How to talk to web services
+### Day 10: Making API Calls - Introduction
+**What you'll learn:** What APIs are and how they work
 
 **Topics:**
-- What is an API? (Simple explanation)
-- Installing the `requests` library
-- Making GET requests
-- Understanding responses
+- What is an API?
+- HTTP methods (GET, POST)
+- Understanding API responses
 
-**Simple Exercise:**
+**Detailed Explanation:**
+
+API = Application Programming Interface. Think of an API like a waiter in a restaurant - you (the customer) want food, the kitchen (the server) makes food, and the waiter (the API) takes your order and brings your food.
+
+**Simple Exercise 1:**
+Make your first API call:
 ```python
 import requests
 
-# Get a random joke from the internet
 response = requests.get("https://official-joke-api.appspot.com/random_joke")
-joke = response.json()
+print("Status code:", response.status_code)
 
-print("Setup:", joke["setup"])
+joke = response.json()
+print("\nSetup:", joke["setup"])
 print("Punchline:", joke["punchline"])
+```
+
+**Simple Exercise 2:**
+Get multiple jokes:
+```python
+import requests
+
+response = requests.get("https://official-joke-api.appspot.com/random_ten")
+jokes = response.json()
+
+print("=== 5 Random Jokes ===\n")
+for i, joke in enumerate(jokes[:5], 1):
+    print(f"Joke {i}:")
+    print(f"  {joke['setup']}")
+    print(f"  {joke['punchline']}\n")
 ```
 
 ---
 
-### Day 7: Introduction to FastAPI
+### Day 11: Making API Calls - Practice
+**What you'll learn:** Working with different APIs
+
+**Topics:**
+- Finding free APIs
+- Error handling
+- Processing API data
+
+**Simple Exercise 1:**
+Get random user data:
+```python
+import requests
+
+def get_random_user():
+    response = requests.get("https://randomuser.me/api/")
+    data = response.json()
+    user = data["results"][0]
+    
+    return {
+        "name": f"{user['name']['first']} {user['name']['last']}",
+        "email": user["email"],
+        "country": user["location"]["country"]
+    }
+
+print("=== Random Users ===\n")
+for i in range(3):
+    user = get_random_user()
+    print(f"Name: {user['name']}")
+    print(f"Email: {user['email']}")
+    print(f"Country: {user['country']}\n")
+```
+
+---
+
+### Day 12: Introduction to FastAPI
 **What you'll learn:** Creating your own API
 
 **Topics:**
 - What is FastAPI?
-- Creating a simple server
-- Making endpoints
-- Testing your API
+- Creating endpoints
+- Running your server
 
-**Simple Exercise:**
+**Simple Exercise 1:**
+Create a basic API:
 ```python
-# Install: pip install fastapi uvicorn
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(title="My First API")
 
 @app.get("/")
 def home():
-    return {"message": "Welcome to my first API!"}
+    return {"message": "Welcome to my API!"}
 
-@app.get("/greet/{name}")
-def greet(name: str):
+@app.get("/hello/{name}")
+def hello(name: str):
     return {"message": f"Hello, {name}!"}
+
+@app.get("/add/{a}/{b}")
+def add(a: int, b: int):
+    return {"result": a + b}
 
 # Run with: uvicorn filename:app --reload
 ```
 
----
-
-## Module 2: LLM Fundamentals & Prompt Engineering (Days 8-14)
-
-### Day 8: What are Large Language Models?
-**What you'll learn:** Understanding how AI chatbots work
-
-**Topics:**
-- What is an LLM? (Simple explanation)
-- How do ChatGPT, Gemini work?
-- Tokens (how AI reads text)
-- Context window (AI's memory limit)
-
-**Simple Exercise:**
-- Go to ChatGPT or Gemini
-- Ask: "Explain what you are in simple words"
-- Ask: "Count the words in this sentence: I love learning AI"
-- Notice how it understands and responds
-
----
-
-### Day 9: Getting API Access
-**What you'll learn:** Setting up API keys to use AI in your code
-
-**Topics:**
-- Creating accounts (OpenAI, Google AI, Groq)
-- Getting API keys
-- Keeping keys safe (environment variables)
-- Free tier limits
-
-**Simple Exercise:**
+**Simple Exercise 2:**
+Create a student API:
 ```python
-# Create a .env file with your API key
-# OPENAI_API_KEY=your-key-here
+from fastapi import FastAPI
+from pydantic import BaseModel
 
+app = FastAPI()
+
+class Student(BaseModel):
+    name: str
+    age: int
+    grade: str
+
+students = []
+
+@app.get("/students")
+def get_students():
+    return {"students": students}
+
+@app.post("/students")
+def add_student(student: Student):
+    students.append(student.dict())
+    return {"message": "Student added", "student": student}
+```
+
+---
+
+## Module 2: LLM Fundamentals & Prompt Engineering (Days 13-24)
+
+### Day 13: Understanding Large Language Models
+**What you'll learn:** How AI chatbots actually work
+
+**Topics:**
+- What is a Large Language Model?
+- How LLMs are trained
+- Tokens and tokenization
+- Context windows explained
+
+**Detailed Explanation:**
+
+A Large Language Model (LLM) is an AI that has learned patterns from billions of text documents. It can understand questions, generate human-like text, translate languages, write code, and summarize documents.
+
+Tokens are how LLMs read text. A token is roughly 1 token ≈ 4 characters or 0.75 words. The context window is the AI's "memory" - how much text it can consider at once. GPT-3.5 has about 4,000 tokens, GPT-4 has 8,000 to 128,000 tokens.
+
+**Simple Exercise 1:**
+Estimate tokens:
+```python
+def estimate_tokens(text):
+    return len(text) // 4
+
+text = "Artificial Intelligence is transforming the world."
+print(f"Text: '{text}'")
+print(f"Estimated tokens: {estimate_tokens(text)}")
+```
+
+---
+
+### Day 14: Getting API Access
+**What you'll learn:** Setting up accounts and API keys
+
+**Topics:**
+- Creating OpenAI account
+- Getting API keys
+- Keeping keys secure
+
+**Simple Exercise 1:**
+Set up environment variables:
+```python
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
 api_key = os.getenv("OPENAI_API_KEY")
-print("API key loaded!" if api_key else "No API key found")
+
+if api_key:
+    print("API key loaded successfully!")
+    print(f"Key starts with: {api_key[:10]}...")
+else:
+    print("No API key found. Check your .env file.")
 ```
 
 ---
 
-### Day 10: Your First LLM API Call
-**What you'll learn:** Making AI respond through code
+### Day 15: Your First LLM API Call
+**What you'll learn:** Making AI respond through your code
 
 **Topics:**
 - Installing OpenAI library
-- Making a simple API call
-- Understanding the response
-- Handling errors
+- Making API calls
+- Understanding responses
 
-**Simple Exercise:**
+**Simple Exercise 1:**
+Make your first API call:
 ```python
 from openai import OpenAI
 
@@ -240,167 +712,83 @@ client = OpenAI()
 response = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "user", "content": "Say hello in 3 different languages"}
+        {"role": "user", "content": "Say hello in 5 different languages"}
     ]
 )
 
 print(response.choices[0].message.content)
 ```
 
----
-
-### Day 11: Prompt Engineering Basics
-**What you'll learn:** How to write better prompts
-
-**Topics:**
-- What is prompt engineering?
-- Clear instructions
-- Giving examples (few-shot)
-- Setting the context
-
-**Simple Exercise:**
-```python
-# Bad prompt
-bad_prompt = "Write about dogs"
-
-# Good prompt
-good_prompt = """
-You are a friendly teacher explaining to a 10-year-old.
-Topic: Dogs
-Include: 3 interesting facts
-Length: 5 sentences
-"""
-
-# Try both and compare the results!
-```
-
----
-
-### Day 12: System Messages & Roles
-**What you'll learn:** Controlling AI behavior
-
-**Topics:**
-- System message (AI's personality)
-- User message (your question)
-- Assistant message (AI's response)
-- Creating different AI personalities
-
-**Simple Exercise:**
+**Simple Exercise 2:**
+Create a question-answer program:
 ```python
 from openai import OpenAI
-client = OpenAI()
-
-# Create a helpful teacher
-response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=[
-        {"role": "system", "content": "You are a friendly teacher who explains things simply. Use examples from daily life."},
-        {"role": "user", "content": "What is machine learning?"}
-    ]
-)
-
-print(response.choices[0].message.content)
-```
-
----
-
-### Day 13: Structured Output (JSON)
-**What you'll learn:** Getting AI to respond in a specific format
-
-**Topics:**
-- Why structured output matters
-- Asking for JSON responses
-- Parsing AI responses
-- Handling format errors
-
-**Simple Exercise:**
-```python
-from openai import OpenAI
-import json
 
 client = OpenAI()
 
-response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=[
-        {"role": "system", "content": "Always respond in JSON format only."},
-        {"role": "user", "content": """
-        Give me information about India in this exact JSON format:
-        {
-            "country": "name",
-            "capital": "city name",
-            "population": "number",
-            "languages": ["list", "of", "languages"]
-        }
-        """}
-    ]
-)
+def ask_ai(question):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": question}]
+    )
+    return response.choices[0].message.content
 
-# Parse the JSON response
-data = json.loads(response.choices[0].message.content)
-print("Capital:", data["capital"])
+print("AI:", ask_ai("What is Python?"))
+print("\nAI:", ask_ai("Give me 3 tips for learning programming"))
 ```
 
 ---
 
-### Day 14: Prompt Patterns & Templates
-**What you'll learn:** Reusable prompt techniques
+### Day 16: Understanding Messages and Roles
+**What you'll learn:** How to structure conversations with AI
 
 **Topics:**
-- Common prompt patterns
-- Creating prompt templates
-- Chain of thought prompting
-- Building a prompt library
-
-**Simple Exercise:**
-```python
-# Create reusable prompt templates
-
-def summarize_prompt(text, length="short"):
-    return f"""
-    Summarize the following text in a {length} paragraph.
-    
-    Text: {text}
-    
-    Summary:
-    """
-
-def translate_prompt(text, language):
-    return f"""
-    Translate the following text to {language}.
-    Keep the meaning exactly the same.
-    
-    Text: {text}
-    
-    Translation:
-    """
-
-# Use the templates
-text = "Artificial Intelligence is changing the world."
-print(summarize_prompt(text))
-print(translate_prompt(text, "Hindi"))
-```
-
----
-
-## Module 3: LLM Application Development (Days 15-20)
-
-### Day 15: Building a Chat Application
-**What you'll learn:** Creating a conversation with AI
-
-**Topics:**
-- Maintaining conversation history
+- System messages
+- User messages
+- Assistant messages
 - Multi-turn conversations
-- Memory in chatbots
 
-**Simple Exercise:**
+**Simple Exercise 1:**
+Create different AI personalities:
 ```python
 from openai import OpenAI
+
 client = OpenAI()
 
-# Store conversation history
+def chat_with_personality(personality, question):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": personality},
+            {"role": "user", "content": question}
+        ]
+    )
+    return response.choices[0].message.content
+
+question = "Explain what a variable is in programming"
+
+print("=== Friendly Teacher ===")
+print(chat_with_personality(
+    "You are a friendly teacher who explains things simply to beginners.",
+    question
+))
+
+print("\n=== Technical Expert ===")
+print(chat_with_personality(
+    "You are a technical expert who gives precise, detailed explanations.",
+    question
+))
+```
+
+**Simple Exercise 2:**
+Build a conversation with memory:
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
 messages = [
-    {"role": "system", "content": "You are a helpful assistant."}
+    {"role": "system", "content": "You are a helpful assistant. Remember what the user tells you."}
 ]
 
 def chat(user_message):
@@ -416,52 +804,323 @@ def chat(user_message):
     
     return assistant_message
 
-# Have a conversation
-print(chat("My name is Rahul"))
-print(chat("What is my name?"))  # It remembers!
+print("User: My name is Rahul")
+print("AI:", chat("My name is Rahul"))
+
+print("\nUser: What is my name?")
+print("AI:", chat("What is my name?"))
 ```
 
 ---
 
-### Day 16: Streaming Responses
-**What you'll learn:** Getting AI responses word by word
+### Day 17: Prompt Engineering Fundamentals
+**What you'll learn:** How to write effective prompts
 
 **Topics:**
-- What is streaming?
-- Why use streaming? (Better user experience)
-- Implementing streaming
-- Handling stream chunks
+- What is prompt engineering?
+- Clear instructions
+- Providing context
+- Specifying format
+
+**Detailed Explanation:**
+
+Prompt Engineering is the skill of writing instructions that get the best results from AI.
+
+Key Principles:
+1. Be Specific - "Write 3 paragraphs about golden retrievers" instead of "Write about dogs"
+2. Provide Context - "I am a beginner programmer. Explain what a function is using simple words"
+3. Specify Format - "List 5 fruits in a numbered list with their colors"
+4. Give Examples - Show the AI what you want
+
+**Simple Exercise 1:**
+Compare bad vs good prompts:
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+def ask(prompt):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+
+print("=== Bad Prompt ===")
+print(ask("Write about AI"))
+
+print("\n=== Good Prompt ===")
+print(ask("""
+Write a brief explanation of Artificial Intelligence for a 10-year-old student.
+
+Requirements:
+- Use simple words
+- Include 2 real-life examples
+- Keep it under 100 words
+- End with an encouraging message
+"""))
+```
+
+---
+
+### Day 18: Advanced Prompt Techniques
+**What you'll learn:** More powerful prompting methods
+
+**Topics:**
+- Few-shot prompting
+- Chain of thought
+- Role-playing prompts
+
+**Simple Exercise 1:**
+Practice few-shot prompting:
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+prompt = """
+Classify the sentiment of movie reviews as Positive, Negative, or Neutral.
+
+Examples:
+Review: "This movie was absolutely amazing! Best film I've seen all year."
+Sentiment: Positive
+
+Review: "Terrible waste of time. The plot made no sense."
+Sentiment: Negative
+
+Review: "It was okay. Nothing special but not bad either."
+Sentiment: Neutral
+
+Now classify:
+Review: "I loved every minute of it! The acting was superb."
+Sentiment:
+"""
+
+response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": prompt}]
+)
+
+print(response.choices[0].message.content)
+```
+
+**Simple Exercise 2:**
+Use chain of thought:
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+prompt = """
+Solve this problem step by step:
+
+A train travels at 60 km/h for 2 hours, then at 80 km/h for 1.5 hours.
+What is the total distance traveled?
+
+Please:
+1. Identify what we know
+2. Write the formula needed
+3. Calculate step by step
+4. Give the final answer with units
+"""
+
+response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": prompt}]
+)
+
+print(response.choices[0].message.content)
+```
+
+---
+
+### Day 19: Getting Structured Output (JSON)
+**What you'll learn:** Making AI respond in specific formats
+
+**Topics:**
+- Why structured output matters
+- Requesting JSON responses
+- Parsing AI responses
+
+**Simple Exercise 1:**
+Get structured data:
+```python
+from openai import OpenAI
+import json
+
+client = OpenAI()
+
+prompt = """
+Create information about a fictional person and return ONLY valid JSON.
+
+The JSON should have:
+{
+    "name": "full name",
+    "age": number,
+    "occupation": "job title",
+    "hobbies": ["hobby1", "hobby2", "hobby3"]
+}
+
+Return only the JSON, no other text.
+"""
+
+response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": "You only respond with valid JSON."},
+        {"role": "user", "content": prompt}
+    ]
+)
+
+result = response.choices[0].message.content
+data = json.loads(result)
+print(f"Name: {data['name']}")
+print(f"Age: {data['age']}")
+print(f"Hobbies: {', '.join(data['hobbies'])}")
+```
+
+---
+
+### Day 20: Building Prompt Templates
+**What you'll learn:** Creating reusable prompts
+
+**Topics:**
+- Why use templates?
+- Creating flexible prompts
+- Template libraries
+
+**Simple Exercise 1:**
+Create a template library:
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+TEMPLATES = {
+    "explain": """
+    Explain {topic} to a {audience}.
+    Use simple language and include {num_examples} examples.
+    Keep it under {max_words} words.
+    """,
+    
+    "summarize": """
+    Summarize the following text in {num_sentences} sentences.
+    
+    Text: {text}
+    """,
+    
+    "translate": """
+    Translate the following text to {language}.
+    
+    Text: {text}
+    """
+}
+
+def use_template(template_name, **kwargs):
+    template = TEMPLATES.get(template_name)
+    prompt = template.format(**kwargs)
+    
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    
+    return response.choices[0].message.content
+
+print(use_template("explain",
+    topic="recursion",
+    audience="10-year-old",
+    num_examples=2,
+    max_words=150
+))
+```
+
+---
+
+### Day 21-24: Review and Practice Days
+
+**Day 21:** Review LLM basics - tokens, context, messages
+**Day 22:** Practice prompt engineering techniques
+**Day 23:** Build a multi-purpose AI assistant
+**Day 24:** Create a prompt library for common tasks
+
+---
+
+## Module 3: LLM Application Development (Days 25-34)
+
+### Day 25: Building Chat Applications
+**What you'll learn:** Creating interactive chat experiences
 
 **Simple Exercise:**
 ```python
 from openai import OpenAI
+
 client = OpenAI()
 
-# Stream the response
+class ChatApp:
+    def __init__(self):
+        self.messages = [
+            {"role": "system", "content": "You are a helpful assistant."}
+        ]
+    
+    def chat(self, user_input):
+        self.messages.append({"role": "user", "content": user_input})
+        
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=self.messages
+        )
+        
+        reply = response.choices[0].message.content
+        self.messages.append({"role": "assistant", "content": reply})
+        
+        return reply
+    
+    def run(self):
+        print("Chat started! Type 'quit' to exit.\n")
+        
+        while True:
+            user_input = input("You: ").strip()
+            
+            if user_input.lower() == 'quit':
+                print("Goodbye!")
+                break
+            
+            response = self.chat(user_input)
+            print(f"AI: {response}\n")
+
+app = ChatApp()
+app.run()
+```
+
+---
+
+### Day 26: Streaming Responses
+**What you'll learn:** Getting AI responses word by word
+
+**Simple Exercise:**
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
 stream = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": "Tell me a short story about a robot"}],
     stream=True
 )
 
-# Print each word as it comes
 print("Story: ", end="")
 for chunk in stream:
     if chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="")
-print()  # New line at end
+print()
 ```
 
 ---
 
-### Day 17: Error Handling & Retries
+### Day 27: Error Handling & Retries
 **What you'll learn:** Making your app reliable
-
-**Topics:**
-- Common API errors
-- Try-except blocks
-- Automatic retries
-- Rate limiting
 
 **Simple Exercise:**
 ```python
@@ -481,24 +1140,16 @@ def safe_api_call(prompt, max_retries=3):
         except Exception as e:
             print(f"Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
-                time.sleep(2)  # Wait before retry
+                time.sleep(2)
     return "Sorry, something went wrong."
 
-# Test it
-result = safe_api_call("Say hello")
-print(result)
+print(safe_api_call("Say hello"))
 ```
 
 ---
 
-### Day 18: Function Calling / Tools
+### Day 28: Function Calling / Tools
 **What you'll learn:** Making AI use tools
-
-**Topics:**
-- What is function calling?
-- Defining functions for AI
-- AI deciding which function to use
-- Executing functions
 
 **Simple Exercise:**
 ```python
@@ -507,7 +1158,6 @@ import json
 
 client = OpenAI()
 
-# Define a simple tool
 tools = [
     {
         "type": "function",
@@ -525,18 +1175,15 @@ tools = [
     }
 ]
 
-# Our fake weather function
 def get_weather(city):
     return f"The weather in {city} is sunny, 25°C"
 
-# Ask AI about weather
 response = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": "What's the weather in Mumbai?"}],
     tools=tools
 )
 
-# Check if AI wants to use a tool
 if response.choices[0].message.tool_calls:
     tool_call = response.choices[0].message.tool_calls[0]
     args = json.loads(tool_call.function.arguments)
@@ -546,14 +1193,7 @@ if response.choices[0].message.tool_calls:
 
 ---
 
-### Day 19: Building an API with LLM
-**What you'll learn:** Creating a web API powered by AI
-
-**Topics:**
-- Combining FastAPI with LLM
-- Creating AI endpoints
-- Handling requests
-- Returning responses
+### Day 29-30: Building APIs with LLMs
 
 **Simple Exercise:**
 ```python
@@ -580,99 +1220,43 @@ def summarize(question: Question):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Summarize the text in 2 sentences."},
+            {"role": "system", "content": "Summarize in 2 sentences."},
             {"role": "user", "content": question.text}
         ]
     )
     return {"summary": response.choices[0].message.content}
-
-# Run: uvicorn filename:app --reload
 ```
 
 ---
 
-### Day 20: Mini Project - CLI Assistant
-**What you'll learn:** Building a complete command-line AI assistant
+### Day 31-34: Mini Projects
 
-**Topics:**
-- Putting everything together
-- User-friendly interface
-- Multiple features
-- Project structure
-
-**Simple Exercise:**
-```python
-from openai import OpenAI
-
-client = OpenAI()
-
-def assistant():
-    print("=" * 50)
-    print("Welcome to AI Assistant!")
-    print("Commands: 'quit' to exit, 'clear' to reset")
-    print("=" * 50)
-    
-    messages = [
-        {"role": "system", "content": "You are a helpful, friendly assistant. Keep responses brief."}
-    ]
-    
-    while True:
-        user_input = input("\nYou: ").strip()
-        
-        if user_input.lower() == 'quit':
-            print("Goodbye!")
-            break
-        elif user_input.lower() == 'clear':
-            messages = [messages[0]]  # Keep system message
-            print("Conversation cleared!")
-            continue
-        elif not user_input:
-            continue
-        
-        messages.append({"role": "user", "content": user_input})
-        
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages
-        )
-        
-        reply = response.choices[0].message.content
-        messages.append({"role": "assistant", "content": reply})
-        
-        print(f"\nAssistant: {reply}")
-
-if __name__ == "__main__":
-    assistant()
-```
+**Day 31:** CLI AI Assistant
+**Day 32:** Text Analyzer Tool
+**Day 33:** Code Explainer
+**Day 34:** Review and Integration
 
 ---
 
-## Module 4: RAG - Retrieval-Augmented Generation (Days 21-29)
+## Module 4: RAG - Retrieval-Augmented Generation (Days 35-48)
 
-### Day 21: What is RAG?
+### Day 35: What is RAG?
 **What you'll learn:** Understanding RAG and why it's important
 
-**Topics:**
-- Problem: AI doesn't know your data
-- Solution: RAG (give AI your documents)
-- How RAG works (simple explanation)
-- Real-world examples
+**Detailed Explanation:**
 
-**Simple Exercise:**
-- Think of 3 situations where you'd want AI to answer from YOUR documents
-- Examples: Company FAQ, College handbook, Product manual
-- Write down why normal ChatGPT can't help in these cases
+RAG (Retrieval-Augmented Generation) solves a key problem: AI doesn't know YOUR data. ChatGPT knows general information but not your company documents, college handbook, or product manual.
+
+RAG works by:
+1. Storing your documents in a searchable format
+2. When a question comes, finding relevant documents
+3. Giving those documents to the AI along with the question
+4. AI answers based on YOUR data
 
 ---
 
-### Day 22: Text Embeddings
+### Day 36: Text Embeddings
 **What you'll learn:** Converting text to numbers AI understands
-
-**Topics:**
-- What are embeddings? (Text as numbers)
-- Why embeddings matter
-- Creating embeddings
-- Comparing text similarity
 
 **Simple Exercise:**
 ```python
@@ -687,15 +1271,11 @@ def get_embedding(text):
     )
     return response.data[0].embedding
 
-# Get embeddings for similar sentences
 text1 = "I love eating pizza"
 text2 = "Pizza is my favorite food"
 text3 = "The weather is nice today"
 
 emb1 = get_embedding(text1)
-emb2 = get_embedding(text2)
-emb3 = get_embedding(text3)
-
 print(f"Embedding length: {len(emb1)}")
 print("Text 1 and 2 are about the same topic (pizza)")
 print("Text 3 is about something different (weather)")
@@ -703,25 +1283,15 @@ print("Text 3 is about something different (weather)")
 
 ---
 
-### Day 23: Vector Databases
-**What you'll learn:** Storing and searching embeddings
-
-**Topics:**
-- What is a vector database?
-- Why we need it for RAG
-- Introduction to ChromaDB
-- Storing and retrieving vectors
+### Day 37-38: Vector Databases
 
 **Simple Exercise:**
 ```python
-# Install: pip install chromadb
 import chromadb
 
-# Create a database
 client = chromadb.Client()
 collection = client.create_collection("my_documents")
 
-# Add some documents
 documents = [
     "Python is a programming language",
     "Machine learning is a type of AI",
@@ -734,7 +1304,6 @@ collection.add(
     ids=["doc1", "doc2", "doc3", "doc4"]
 )
 
-# Search for similar documents
 results = collection.query(
     query_texts=["Tell me about coding"],
     n_results=2
@@ -747,54 +1316,11 @@ for doc in results['documents'][0]:
 
 ---
 
-### Day 24: Document Loading
-**What you'll learn:** Reading different file types
-
-**Topics:**
-- Loading text files
-- Loading PDF files
-- Loading web pages
-- Handling different formats
-
-**Simple Exercise:**
-```python
-# Install: pip install pypdf
-
-# Load a text file
-def load_text_file(filepath):
-    with open(filepath, 'r') as f:
-        return f.read()
-
-# Load a PDF file
-from pypdf import PdfReader
-
-def load_pdf(filepath):
-    reader = PdfReader(filepath)
-    text = ""
-    for page in reader.pages:
-        text += page.extract_text()
-    return text
-
-# Example usage
-# text_content = load_text_file("notes.txt")
-# pdf_content = load_pdf("document.pdf")
-```
-
----
-
-### Day 25: Text Chunking
-**What you'll learn:** Breaking documents into smaller pieces
-
-**Topics:**
-- Why chunking matters
-- Different chunking strategies
-- Chunk size and overlap
-- Best practices
+### Day 39-40: Document Loading and Chunking
 
 **Simple Exercise:**
 ```python
 def simple_chunk(text, chunk_size=500, overlap=50):
-    """Split text into overlapping chunks"""
     chunks = []
     start = 0
     
@@ -802,11 +1328,10 @@ def simple_chunk(text, chunk_size=500, overlap=50):
         end = start + chunk_size
         chunk = text[start:end]
         chunks.append(chunk)
-        start = end - overlap  # Overlap with previous chunk
+        start = end - overlap
     
     return chunks
 
-# Example
 long_text = "This is a very long document. " * 100
 chunks = simple_chunk(long_text, chunk_size=200, overlap=20)
 
@@ -816,14 +1341,7 @@ print(f"First chunk: {chunks[0][:50]}...")
 
 ---
 
-### Day 26: Building a Simple RAG System
-**What you'll learn:** Putting RAG components together
-
-**Topics:**
-- Complete RAG pipeline
-- Loading → Chunking → Embedding → Storing
-- Retrieving relevant chunks
-- Generating answers
+### Day 41-43: Building RAG Systems
 
 **Simple Exercise:**
 ```python
@@ -834,7 +1352,6 @@ client = OpenAI()
 chroma = chromadb.Client()
 collection = chroma.create_collection("knowledge_base")
 
-# Step 1: Add your knowledge
 knowledge = [
     "Our company was founded in 2020 in Bangalore.",
     "We have 500 employees across India.",
@@ -845,13 +1362,10 @@ knowledge = [
 
 collection.add(documents=knowledge, ids=[f"doc{i}" for i in range(len(knowledge))])
 
-# Step 2: RAG function
 def ask_with_rag(question):
-    # Find relevant documents
     results = collection.query(query_texts=[question], n_results=2)
     context = "\n".join(results['documents'][0])
     
-    # Ask AI with context
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -861,52 +1375,34 @@ def ask_with_rag(question):
     )
     return response.choices[0].message.content
 
-# Test it
 print(ask_with_rag("When was the company founded?"))
 print(ask_with_rag("How can I contact HR?"))
 ```
 
 ---
 
-### Day 27: Adding Citations
-**What you'll learn:** Showing sources for AI answers
-
-**Topics:**
-- Why citations matter
-- Tracking source documents
-- Displaying references
-- Building trust with users
+### Day 44-46: RAG with Citations and Evaluation
 
 **Simple Exercise:**
 ```python
 def ask_with_citations(question):
-    # Find relevant documents with metadata
-    results = collection.query(
-        query_texts=[question], 
-        n_results=2,
-        include=["documents", "metadatas"]
-    )
-    
+    results = collection.query(query_texts=[question], n_results=2)
     context = "\n".join(results['documents'][0])
     sources = results['ids'][0]
     
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": f"Answer based on this information:\n{context}\n\nBe specific and accurate."},
+            {"role": "system", "content": f"Answer based on:\n{context}"},
             {"role": "user", "content": question}
         ]
     )
     
-    answer = response.choices[0].message.content
-    
     return {
-        "answer": answer,
-        "sources": sources,
-        "context_used": results['documents'][0]
+        "answer": response.choices[0].message.content,
+        "sources": sources
     }
 
-# Test
 result = ask_with_citations("What are the office hours?")
 print(f"Answer: {result['answer']}")
 print(f"Sources: {result['sources']}")
@@ -914,66 +1410,10 @@ print(f"Sources: {result['sources']}")
 
 ---
 
-### Day 28: RAG Evaluation
-**What you'll learn:** Testing if your RAG system works well
-
-**Topics:**
-- What makes a good RAG system?
-- Testing retrieval quality
-- Testing answer quality
-- Simple evaluation metrics
+### Day 47-48: RAG Project - Document Q&A Bot
 
 **Simple Exercise:**
 ```python
-# Create test questions with expected answers
-test_cases = [
-    {
-        "question": "When was the company founded?",
-        "expected_keywords": ["2020", "Bangalore"]
-    },
-    {
-        "question": "How many employees?",
-        "expected_keywords": ["500"]
-    }
-]
-
-def evaluate_rag(test_cases):
-    results = []
-    for test in test_cases:
-        answer = ask_with_rag(test["question"])
-        
-        # Check if expected keywords are in answer
-        found = [kw for kw in test["expected_keywords"] if kw.lower() in answer.lower()]
-        score = len(found) / len(test["expected_keywords"])
-        
-        results.append({
-            "question": test["question"],
-            "answer": answer,
-            "score": score
-        })
-        print(f"Q: {test['question']}")
-        print(f"A: {answer}")
-        print(f"Score: {score * 100}%\n")
-    
-    return results
-
-evaluate_rag(test_cases)
-```
-
----
-
-### Day 29: RAG Project - Document Q&A Bot
-**What you'll learn:** Building a complete RAG application
-
-**Topics:**
-- End-to-end RAG project
-- User-friendly interface
-- Error handling
-- Project organization
-
-**Simple Exercise:**
-```python
-# Complete RAG Chatbot Project
 import chromadb
 from openai import OpenAI
 
@@ -984,7 +1424,6 @@ class DocumentQABot:
         self.collection = self.chroma.create_collection("docs")
     
     def add_documents(self, documents):
-        """Add documents to knowledge base"""
         self.collection.add(
             documents=documents,
             ids=[f"doc_{i}" for i in range(len(documents))]
@@ -992,16 +1431,13 @@ class DocumentQABot:
         print(f"Added {len(documents)} documents")
     
     def ask(self, question):
-        """Ask a question and get answer with sources"""
-        # Retrieve
         results = self.collection.query(query_texts=[question], n_results=3)
         context = "\n".join(results['documents'][0])
         
-        # Generate
         response = self.client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": f"Answer based only on this context:\n{context}\n\nIf the answer is not in the context, say 'I don't have information about that.'"},
+                {"role": "system", "content": f"Answer based only on:\n{context}\n\nIf not in context, say 'I don't know.'"},
                 {"role": "user", "content": question}
             ]
         )
@@ -1011,13 +1447,11 @@ class DocumentQABot:
             "sources": results['documents'][0]
         }
 
-# Usage
 bot = DocumentQABot()
 bot.add_documents([
     "Python was created by Guido van Rossum in 1991.",
     "Python is known for its simple and readable syntax.",
-    "Popular Python frameworks include Django and Flask.",
-    "Python is widely used in AI and machine learning."
+    "Popular Python frameworks include Django and Flask."
 ])
 
 result = bot.ask("Who created Python?")
@@ -1026,33 +1460,15 @@ print(f"Answer: {result['answer']}")
 
 ---
 
-## Module 5: AI Agents & Workflows (Days 30-35)
+## Module 5: AI Agents & Workflows (Days 49-58)
 
-### Day 30: What are AI Agents?
-**What you'll learn:** Understanding AI agents
+### Day 49-50: Understanding AI Agents
 
-**Topics:**
-- What is an AI agent?
-- Agents vs simple chatbots
-- Tools and actions
-- Real-world agent examples
-
-**Simple Exercise:**
-- Think about a personal assistant
-- List 5 tasks it should be able to do
-- For each task, what "tools" would it need?
-- Example: "Check weather" needs a weather API tool
+An AI agent is an AI that can take actions, not just answer questions. It can use tools, make decisions, and complete multi-step tasks.
 
 ---
 
-### Day 31: Building a Simple Agent
-**What you'll learn:** Creating your first AI agent
-
-**Topics:**
-- Agent architecture
-- Tool definition
-- Decision making
-- Executing actions
+### Day 51-53: Building Agents
 
 **Simple Exercise:**
 ```python
@@ -1061,7 +1477,6 @@ import json
 
 client = OpenAI()
 
-# Define tools the agent can use
 tools = [
     {
         "type": "function",
@@ -1071,34 +1486,20 @@ tools = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "expression": {"type": "string", "description": "Math expression like '2 + 2'"}
+                    "expression": {"type": "string"}
                 },
                 "required": ["expression"]
             }
         }
-    },
-    {
-        "type": "function",
-        "function": {
-            "name": "get_time",
-            "description": "Get current time",
-            "parameters": {"type": "object", "properties": {}}
-        }
     }
 ]
 
-# Tool implementations
 def calculator(expression):
     try:
         return str(eval(expression))
     except:
-        return "Error in calculation"
+        return "Error"
 
-def get_time():
-    from datetime import datetime
-    return datetime.now().strftime("%H:%M:%S")
-
-# Simple agent
 def agent(user_message):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -1110,72 +1511,18 @@ def agent(user_message):
     
     if message.tool_calls:
         tool_call = message.tool_calls[0]
-        tool_name = tool_call.function.name
         args = json.loads(tool_call.function.arguments)
-        
-        if tool_name == "calculator":
-            result = calculator(args["expression"])
-        elif tool_name == "get_time":
-            result = get_time()
-        
-        return f"Used {tool_name}: {result}"
+        result = calculator(args["expression"])
+        return f"Calculated: {result}"
     
     return message.content
 
 print(agent("What is 25 * 4?"))
-print(agent("What time is it?"))
 ```
 
 ---
 
-### Day 32: Multi-Tool Agents
-**What you'll learn:** Agents with multiple capabilities
-
-**Topics:**
-- Adding more tools
-- Tool selection logic
-- Chaining tool calls
-- Handling complex requests
-
-**Simple Exercise:**
-```python
-# Agent with multiple tools
-import requests
-
-def search_wikipedia(query):
-    """Search Wikipedia for information"""
-    url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{query}"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json().get("extract", "No information found")[:500]
-    return "Could not find information"
-
-def translate_text(text, target_language):
-    """Translate text (simplified - uses AI)"""
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": f"Translate to {target_language}. Only output the translation."},
-            {"role": "user", "content": text}
-        ]
-    )
-    return response.choices[0].message.content
-
-# Test the tools
-print(search_wikipedia("Python_programming"))
-print(translate_text("Hello, how are you?", "Hindi"))
-```
-
----
-
-### Day 33: Agent Memory
-**What you'll learn:** Giving agents memory
-
-**Topics:**
-- Short-term memory (conversation)
-- Long-term memory (stored facts)
-- Memory management
-- When to remember/forget
+### Day 54-56: Agent Memory and Workflows
 
 **Simple Exercise:**
 ```python
@@ -1183,18 +1530,16 @@ class AgentWithMemory:
     def __init__(self):
         self.client = OpenAI()
         self.conversation = []
-        self.facts = []  # Long-term memory
+        self.facts = []
     
     def remember_fact(self, fact):
-        """Store important information"""
         self.facts.append(fact)
         print(f"Remembered: {fact}")
     
     def chat(self, message):
-        # Include facts in context
         system_message = "You are a helpful assistant."
         if self.facts:
-            system_message += f"\n\nRemember these facts:\n" + "\n".join(self.facts)
+            system_message += f"\n\nRemember:\n" + "\n".join(self.facts)
         
         self.conversation.append({"role": "user", "content": message})
         
@@ -1208,839 +1553,120 @@ class AgentWithMemory:
         
         return reply
 
-# Usage
 agent = AgentWithMemory()
 agent.remember_fact("User's name is Priya")
-agent.remember_fact("User is studying Computer Science")
-
-print(agent.chat("Hello!"))
 print(agent.chat("What do you know about me?"))
 ```
 
 ---
 
-### Day 34: Workflow Automation
-**What you'll learn:** Creating multi-step workflows
+### Day 57-58: Agent Projects
 
-**Topics:**
-- What are workflows?
-- Sequential steps
-- Conditional logic
-- Error handling in workflows
-
-**Simple Exercise:**
-```python
-class SimpleWorkflow:
-    def __init__(self):
-        self.client = OpenAI()
-    
-    def research_and_summarize(self, topic):
-        """Workflow: Research a topic and create a summary"""
-        print(f"Step 1: Researching {topic}...")
-        
-        # Step 1: Generate research points
-        research = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": f"List 5 key points about {topic}"}]
-        ).choices[0].message.content
-        
-        print("Step 2: Creating summary...")
-        
-        # Step 2: Summarize the research
-        summary = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "Create a brief, easy-to-understand summary."},
-                {"role": "user", "content": f"Summarize this:\n{research}"}
-            ]
-        ).choices[0].message.content
-        
-        print("Step 3: Translating to Hindi...")
-        
-        # Step 3: Translate
-        hindi = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": f"Translate to Hindi:\n{summary}"}]
-        ).choices[0].message.content
-        
-        return {
-            "research": research,
-            "summary": summary,
-            "hindi_summary": hindi
-        }
-
-# Run workflow
-workflow = SimpleWorkflow()
-result = workflow.research_and_summarize("Artificial Intelligence")
-print("\n=== Final Summary ===")
-print(result["summary"])
-```
+Build a Research Assistant that can search, summarize, and generate reports.
 
 ---
 
-### Day 35: Agent Project - Research Assistant
-**What you'll learn:** Building a complete agent application
+## Module 6: Fine-tuning & Model Adaptation (Days 59-65)
 
-**Topics:**
-- Complete agent project
-- Multiple tools integration
-- User interaction
-- Practical use case
+### Day 59-60: Understanding Fine-tuning
 
-**Simple Exercise:**
-```python
-class ResearchAssistant:
-    def __init__(self):
-        self.client = OpenAI()
-        self.research_notes = []
-    
-    def search(self, query):
-        """Search for information"""
-        response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": f"Provide factual information about: {query}"}]
-        )
-        info = response.choices[0].message.content
-        self.research_notes.append({"query": query, "info": info})
-        return info
-    
-    def summarize_research(self):
-        """Summarize all research"""
-        if not self.research_notes:
-            return "No research notes yet."
-        
-        all_notes = "\n\n".join([f"Topic: {n['query']}\n{n['info']}" for n in self.research_notes])
-        
-        response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "Create a comprehensive summary of all research."},
-                {"role": "user", "content": all_notes}
-            ]
-        )
-        return response.choices[0].message.content
-    
-    def generate_report(self, title):
-        """Generate a formatted report"""
-        summary = self.summarize_research()
-        
-        report = f"""
-# Research Report: {title}
+Fine-tuning is training an existing model on your specific data to customize its behavior.
 
-## Summary
-{summary}
-
-## Sources Researched
-"""
-        for note in self.research_notes:
-            report += f"- {note['query']}\n"
-        
-        return report
-
-# Usage
-assistant = ResearchAssistant()
-assistant.search("Benefits of renewable energy")
-assistant.search("Solar power technology")
-assistant.search("Wind energy advantages")
-
-report = assistant.generate_report("Renewable Energy Overview")
-print(report)
-```
+When to use what:
+- Prompt Engineering: Quick, free, good for most cases
+- RAG: When you need custom knowledge
+- Fine-tuning: When you need custom behavior/style
 
 ---
 
-## Module 6: Fine-tuning & Model Adaptation (Days 36-40)
-
-### Day 36: Understanding Fine-tuning
-**What you'll learn:** What fine-tuning is and when to use it
-
-**Topics:**
-- What is fine-tuning?
-- Fine-tuning vs Prompt Engineering vs RAG
-- When to fine-tune
-- Costs and considerations
-
-**Simple Exercise:**
-- Create a comparison table:
-  | Method | When to Use | Pros | Cons |
-  |--------|-------------|------|------|
-  | Prompt Engineering | | | |
-  | RAG | | | |
-  | Fine-tuning | | | |
-
----
-
-### Day 37: Preparing Training Data
-**What you'll learn:** Creating datasets for fine-tuning
-
-**Topics:**
-- Data format requirements
-- Creating training examples
-- Data quality importance
-- JSONL format
+### Day 61-62: Preparing Training Data
 
 **Simple Exercise:**
 ```python
 import json
 
-# Create training data for a customer support bot
 training_data = [
     {
         "messages": [
-            {"role": "system", "content": "You are a helpful customer support agent for TechStore."},
+            {"role": "system", "content": "You are a customer support agent."},
             {"role": "user", "content": "How do I return a product?"},
-            {"role": "assistant", "content": "To return a product at TechStore: 1) Log into your account, 2) Go to 'My Orders', 3) Click 'Return' next to the item, 4) Print the return label, 5) Ship within 7 days. Refund processes in 3-5 business days."}
-        ]
-    },
-    {
-        "messages": [
-            {"role": "system", "content": "You are a helpful customer support agent for TechStore."},
-            {"role": "user", "content": "What's your refund policy?"},
-            {"role": "assistant", "content": "TechStore offers a 30-day refund policy for all products. Items must be unused and in original packaging. Electronics have a 15-day return window. Refunds are processed to the original payment method within 3-5 business days."}
+            {"role": "assistant", "content": "To return: 1) Log in, 2) Go to Orders, 3) Click Return."}
         ]
     }
 ]
 
-# Save as JSONL file
 with open("training_data.jsonl", "w") as f:
     for item in training_data:
         f.write(json.dumps(item) + "\n")
 
 print("Training data saved!")
-print(f"Total examples: {len(training_data)}")
 ```
 
 ---
 
-### Day 38: Fine-tuning Process
-**What you'll learn:** How to fine-tune a model
+### Day 63-65: Fine-tuning Process and LoRA
 
-**Topics:**
-- Uploading training data
-- Starting fine-tuning job
-- Monitoring progress
-- Using fine-tuned model
-
-**Simple Exercise:**
-```python
-from openai import OpenAI
-
-client = OpenAI()
-
-# Step 1: Upload training file
-# file = client.files.create(
-#     file=open("training_data.jsonl", "rb"),
-#     purpose="fine-tune"
-# )
-# print(f"File ID: {file.id}")
-
-# Step 2: Create fine-tuning job
-# job = client.fine_tuning.jobs.create(
-#     training_file=file.id,
-#     model="gpt-3.5-turbo"
-# )
-# print(f"Job ID: {job.id}")
-
-# Step 3: Check job status
-# status = client.fine_tuning.jobs.retrieve(job.id)
-# print(f"Status: {status.status}")
-
-# Step 4: Use fine-tuned model (after completion)
-# response = client.chat.completions.create(
-#     model="ft:gpt-3.5-turbo:your-org::your-model-id",
-#     messages=[{"role": "user", "content": "How do I return a product?"}]
-# )
-
-print("Fine-tuning steps demonstrated!")
-print("Note: Actual fine-tuning requires API credits")
-```
+Learn about the fine-tuning process and efficient methods like LoRA.
 
 ---
 
-### Day 39: LoRA and Efficient Fine-tuning
-**What you'll learn:** Modern fine-tuning techniques
+## Module 7: Deployment & Production (Days 66-70)
 
-**Topics:**
-- What is LoRA?
-- Why LoRA is efficient
-- Open-source fine-tuning
-- Hugging Face basics
+### Day 66-67: Docker Basics
 
-**Simple Exercise:**
-```python
-# Conceptual understanding of LoRA
-# (Actual implementation requires GPU)
-
-"""
-LoRA (Low-Rank Adaptation) Explained Simply:
-
-Instead of changing ALL the model's parameters (billions!),
-LoRA only changes a SMALL part (millions).
-
-Think of it like this:
-- Full fine-tuning = Rebuilding the entire house
-- LoRA = Just redecorating one room
-
-Benefits:
-1. Much faster training
-2. Uses less memory
-3. Smaller file sizes
-4. Can switch between different "styles" easily
-
-Example use cases:
-- Train a model to write like Shakespeare
-- Train a model for medical terminology
-- Train a model for your company's style
-"""
-
-# Pseudo-code for LoRA fine-tuning
-"""
-from peft import LoraConfig, get_peft_model
-from transformers import AutoModelForCausalLM
-
-# Load base model
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b")
-
-# Configure LoRA
-lora_config = LoraConfig(
-    r=16,  # Rank (smaller = more efficient)
-    lora_alpha=32,
-    target_modules=["q_proj", "v_proj"],
-    lora_dropout=0.05
-)
-
-# Apply LoRA
-model = get_peft_model(model, lora_config)
-
-# Now train with your data!
-"""
-
-print("LoRA concept explained!")
-```
-
----
-
-### Day 40: Choosing the Right Approach
-**What you'll learn:** Decision framework for model customization
-
-**Topics:**
-- Decision flowchart
-- Cost-benefit analysis
-- Hybrid approaches
-- Best practices
-
-**Simple Exercise:**
-```python
-def recommend_approach(requirements):
-    """
-    Help decide: Prompt Engineering vs RAG vs Fine-tuning
-    """
-    
-    questions = {
-        "need_custom_knowledge": "Do you need the AI to know specific information (like your company docs)?",
-        "need_custom_style": "Do you need the AI to respond in a specific style/format?",
-        "have_training_data": "Do you have 100+ examples of ideal responses?",
-        "have_budget": "Do you have budget for fine-tuning ($50+)?",
-        "need_real_time_updates": "Does your information change frequently?"
-    }
-    
-    # Decision logic
-    if requirements.get("need_custom_knowledge") and requirements.get("need_real_time_updates"):
-        return "RAG - Best for dynamic knowledge that changes"
-    
-    if requirements.get("need_custom_style") and requirements.get("have_training_data") and requirements.get("have_budget"):
-        return "Fine-tuning - Best for consistent custom behavior"
-    
-    if requirements.get("need_custom_knowledge") and not requirements.get("need_real_time_updates"):
-        return "RAG or Fine-tuning - Depends on data size"
-    
-    return "Prompt Engineering - Start here, it's free and fast!"
-
-# Example
-my_requirements = {
-    "need_custom_knowledge": True,
-    "need_custom_style": False,
-    "have_training_data": False,
-    "have_budget": False,
-    "need_real_time_updates": True
-}
-
-print(recommend_approach(my_requirements))
-```
-
----
-
-## Module 7: Deployment & Production (Days 41-45)
-
-### Day 41: Introduction to Deployment
-**What you'll learn:** Taking your app from laptop to internet
-
-**Topics:**
-- What is deployment?
-- Development vs Production
-- Deployment options
-- Basic requirements
-
-**Simple Exercise:**
-- List 3 apps you use daily (WhatsApp, YouTube, etc.)
-- Think: Where do they run? (Not on your phone!)
-- Understand: Your AI app needs a "home" on the internet too
-
----
-
-### Day 42: Docker Basics
-**What you'll learn:** Packaging your app
-
-**Topics:**
-- What is Docker?
-- Why use containers?
-- Creating a Dockerfile
-- Building and running containers
-
-**Simple Exercise:**
+**Dockerfile:**
 ```dockerfile
-# Dockerfile for our AI app
 FROM python:3.10-slim
-
-# Set working directory
 WORKDIR /app
-
-# Copy requirements first (for caching)
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-
-# Copy application code
 COPY . .
-
-# Expose port
 EXPOSE 8000
-
-# Run the app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-```python
-# requirements.txt
-fastapi
-uvicorn
-openai
-python-dotenv
-```
-
-```bash
-# Commands to run
-# docker build -t my-ai-app .
-# docker run -p 8000:8000 my-ai-app
-```
-
 ---
 
-### Day 43: Environment Variables & Secrets
-**What you'll learn:** Keeping API keys safe
+### Day 68: Environment Variables & Secrets
 
-**Topics:**
-- Why hide secrets?
-- Environment variables
-- .env files
-- Secret management
-
-**Simple Exercise:**
 ```python
-# NEVER do this:
-# api_key = "sk-abc123..."  # BAD! Anyone can see this
-
-# DO this instead:
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
 api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
-    raise ValueError("Please set OPENAI_API_KEY environment variable")
-
-# Create a .env file (add to .gitignore!)
-# .env contents:
-# OPENAI_API_KEY=your-key-here
-
-# .gitignore contents:
-# .env
-# *.pyc
-# __pycache__/
+    raise ValueError("Please set OPENAI_API_KEY")
 ```
 
 ---
 
-### Day 44: Deploying to Cloud
-**What you'll learn:** Putting your app online
+### Day 69-70: Cloud Deployment and Security
 
-**Topics:**
-- Cloud platforms (Render, Railway, Fly.io)
-- Deployment steps
-- Domain names
-- Monitoring basics
-
-**Simple Exercise:**
-```python
-# Complete deployable FastAPI app
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from openai import OpenAI
-import os
-
-app = FastAPI(title="My AI API")
-client = OpenAI()
-
-class Question(BaseModel):
-    text: str
-
-@app.get("/")
-def home():
-    return {"status": "running", "message": "AI API is live!"}
-
-@app.get("/health")
-def health():
-    return {"status": "healthy"}
-
-@app.post("/ask")
-def ask(question: Question):
-    try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": question.text}],
-            max_tokens=500
-        )
-        return {"answer": response.choices[0].message.content}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-# Deploy to Render:
-# 1. Push code to GitHub
-# 2. Connect GitHub to Render
-# 3. Set environment variables
-# 4. Deploy!
-```
+Deploy to Render, Railway, or Fly.io. Learn about rate limiting, input validation, and logging.
 
 ---
 
-### Day 45: Security & Best Practices
-**What you'll learn:** Making your app safe
+## Module 8: Capstone Project & Interview Prep (Days 71-75)
 
-**Topics:**
-- Prompt injection attacks
-- Rate limiting
-- Input validation
-- Logging and monitoring
+### Day 71-72: Capstone Project
 
-**Simple Exercise:**
-```python
-from fastapi import FastAPI, HTTPException, Request
-from slowapi import Limiter
-from slowapi.util import get_remote_address
-import re
-
-app = FastAPI()
-limiter = Limiter(key_func=get_remote_address)
-
-# Security: Input validation
-def validate_input(text: str) -> str:
-    # Remove potential injection attempts
-    dangerous_patterns = [
-        r"ignore previous instructions",
-        r"forget everything",
-        r"you are now",
-    ]
-    
-    for pattern in dangerous_patterns:
-        if re.search(pattern, text.lower()):
-            raise HTTPException(status_code=400, detail="Invalid input detected")
-    
-    # Limit length
-    if len(text) > 1000:
-        raise HTTPException(status_code=400, detail="Input too long")
-    
-    return text
-
-# Rate limiting: Max 10 requests per minute
-@app.post("/ask")
-@limiter.limit("10/minute")
-def ask(request: Request, question: Question):
-    clean_text = validate_input(question.text)
-    # ... rest of the code
-    
-# Logging
-import logging
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-@app.post("/ask")
-def ask(question: Question):
-    logger.info(f"Received question: {question.text[:50]}...")
-    # ... process
-    logger.info("Response sent successfully")
-```
+Choose and build one of:
+1. Study Buddy Bot - RAG chatbot for textbooks
+2. Customer Support Agent - Multi-tool assistant
+3. Content Creator - Blog/social media generator
+4. Code Helper - Programming assistant
 
 ---
 
-## Module 8: Capstone Project & Interview Prep (Days 46-50)
+### Day 73: Portfolio & Resume
 
-### Day 46: Capstone Project Planning
-**What you'll learn:** Planning your final project
-
-**Topics:**
-- Choosing a project idea
-- Project requirements
-- Architecture design
-- Timeline planning
-
-**Simple Exercise:**
-Choose ONE project idea:
-
-1. **Study Buddy Bot** - RAG chatbot for a textbook/course
-2. **Customer Support Agent** - Multi-tool support assistant
-3. **Content Creator** - Blog/social media content generator
-4. **Code Helper** - Programming assistant with examples
-5. **Personal Finance Advisor** - Budget and savings assistant
-
-Plan your project:
-- What problem does it solve?
-- What features will it have?
-- What tools/APIs will you use?
-- How will users interact with it?
+Create a GitHub portfolio with good READMEs for all your projects.
 
 ---
 
-### Day 47: Capstone - Building Core Features
-**What you'll learn:** Implementing main functionality
-
-**Topics:**
-- Setting up project structure
-- Implementing core logic
-- Testing features
-- Iterating on feedback
-
-**Simple Exercise:**
-```python
-# Example: Study Buddy Bot - Core Structure
-import chromadb
-from openai import OpenAI
-from fastapi import FastAPI
-from pydantic import BaseModel
-
-app = FastAPI(title="Study Buddy")
-client = OpenAI()
-chroma = chromadb.Client()
-collection = chroma.create_collection("study_materials")
-
-class StudyRequest(BaseModel):
-    question: str
-    subject: str = "general"
-
-class StudyBuddy:
-    def __init__(self):
-        self.client = OpenAI()
-    
-    def add_study_material(self, content: str, subject: str):
-        """Add notes/textbook content"""
-        collection.add(
-            documents=[content],
-            metadatas=[{"subject": subject}],
-            ids=[f"doc_{collection.count()}"]
-        )
-    
-    def ask_question(self, question: str, subject: str = None):
-        """Ask a question about study materials"""
-        # Retrieve relevant content
-        where_filter = {"subject": subject} if subject else None
-        results = collection.query(
-            query_texts=[question],
-            n_results=3,
-            where=where_filter
-        )
-        
-        context = "\n".join(results['documents'][0]) if results['documents'][0] else ""
-        
-        # Generate answer
-        response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": f"You are a helpful study assistant. Use this context to answer:\n{context}\n\nIf the answer isn't in the context, provide general knowledge but mention it."},
-                {"role": "user", "content": question}
-            ]
-        )
-        
-        return {
-            "answer": response.choices[0].message.content,
-            "sources_used": len(results['documents'][0])
-        }
-    
-    def generate_quiz(self, topic: str, num_questions: int = 5):
-        """Generate practice questions"""
-        response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "Create simple multiple choice questions for students."},
-                {"role": "user", "content": f"Create {num_questions} quiz questions about {topic}. Format: Question, 4 options (A-D), Correct answer."}
-            ]
-        )
-        return response.choices[0].message.content
-
-buddy = StudyBuddy()
-
-@app.post("/add-material")
-def add_material(content: str, subject: str):
-    buddy.add_study_material(content, subject)
-    return {"status": "Material added"}
-
-@app.post("/ask")
-def ask(request: StudyRequest):
-    return buddy.ask_question(request.question, request.subject)
-
-@app.get("/quiz/{topic}")
-def quiz(topic: str, count: int = 5):
-    return {"quiz": buddy.generate_quiz(topic, count)}
-```
-
----
-
-### Day 48: Capstone - UI and Polish
-**What you'll learn:** Making your project user-friendly
-
-**Topics:**
-- Adding a simple UI (Streamlit)
-- Error handling
-- User experience improvements
-- Documentation
-
-**Simple Exercise:**
-```python
-# Streamlit UI for Study Buddy
-# Install: pip install streamlit
-
-import streamlit as st
-from study_buddy import StudyBuddy
-
-st.title("Study Buddy - Your AI Learning Assistant")
-
-# Initialize
-if 'buddy' not in st.session_state:
-    st.session_state.buddy = StudyBuddy()
-
-# Sidebar for adding materials
-with st.sidebar:
-    st.header("Add Study Material")
-    subject = st.text_input("Subject")
-    content = st.text_area("Paste your notes here")
-    if st.button("Add Material"):
-        if content and subject:
-            st.session_state.buddy.add_study_material(content, subject)
-            st.success("Material added!")
-
-# Main area
-tab1, tab2 = st.tabs(["Ask Questions", "Take Quiz"])
-
-with tab1:
-    st.header("Ask a Question")
-    question = st.text_input("What would you like to know?")
-    if st.button("Ask"):
-        if question:
-            with st.spinner("Thinking..."):
-                result = st.session_state.buddy.ask_question(question)
-                st.write(result["answer"])
-                st.caption(f"Used {result['sources_used']} sources")
-
-with tab2:
-    st.header("Practice Quiz")
-    topic = st.text_input("Quiz topic")
-    if st.button("Generate Quiz"):
-        if topic:
-            with st.spinner("Creating quiz..."):
-                quiz = st.session_state.buddy.generate_quiz(topic)
-                st.write(quiz)
-
-# Run: streamlit run app.py
-```
-
----
-
-### Day 49: Portfolio & Resume
-**What you'll learn:** Showcasing your work
-
-**Topics:**
-- Creating a GitHub portfolio
-- Writing good READMEs
-- Resume tips for GenAI roles
-- LinkedIn optimization
-
-**Simple Exercise:**
-```markdown
-# Project README Template
-
-## Project Name
-One line description of what it does.
-
-## Demo
-[Link to live demo or video]
-
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Tech Stack
-- Python 3.10
-- FastAPI
-- OpenAI API
-- ChromaDB
-- Streamlit
-
-## Installation
-```bash
-git clone https://github.com/yourusername/project
-cd project
-pip install -r requirements.txt
-```
-
-## Usage
-```bash
-# Set your API key
-export OPENAI_API_KEY=your-key
-
-# Run the app
-streamlit run app.py
-```
-
-## Architecture
-[Simple diagram or explanation]
-
-## What I Learned
-- How to build RAG applications
-- Prompt engineering techniques
-- Deploying AI applications
-
-## Future Improvements
-- Add feature X
-- Improve Y
-- Optimize Z
-
-## Contact
-Your Name - your.email@example.com
-```
-
----
-
-### Day 50: Interview Preparation & Course Completion
-**What you'll learn:** Preparing for GenAI job interviews
-
-**Topics:**
-- Common interview questions
-- Technical concepts review
-- Behavioral questions
-- Mock interview practice
-
-**Simple Exercise:**
+### Day 74-75: Interview Preparation
 
 **Technical Questions to Practice:**
 
@@ -2048,78 +1674,44 @@ Your Name - your.email@example.com
 2. Explain how embeddings work in simple terms.
 3. What is prompt injection and how do you prevent it?
 4. How would you reduce hallucinations in an LLM application?
-5. Explain the concept of tokens and context window.
+5. Explain tokens and context window.
 6. What is temperature in LLM APIs?
-7. How do AI agents differ from simple chatbots?
+7. How do AI agents differ from chatbots?
 8. What are the key components of a RAG system?
-9. How would you evaluate a RAG system's performance?
+9. How would you evaluate a RAG system?
 10. What security considerations are important for GenAI apps?
-
-**Coding Challenge Practice:**
-```python
-# Challenge: Build a simple sentiment analyzer
-def analyze_sentiment(text):
-    """
-    Use an LLM to analyze sentiment.
-    Return: positive, negative, or neutral
-    """
-    # Your code here
-    pass
-
-# Challenge: Create a text summarizer with length control
-def summarize(text, max_words=50):
-    """
-    Summarize text within word limit.
-    """
-    # Your code here
-    pass
-
-# Challenge: Build a simple Q&A system
-def answer_from_context(context, question):
-    """
-    Answer question based only on given context.
-    If answer not in context, say "I don't know"
-    """
-    # Your code here
-    pass
-```
 
 ---
 
 ## Congratulations!
 
-You have completed the 50-Day GenAI Course!
+You have completed the 75-Day Detailed GenAI Course!
 
-### What You've Learned:
-- Python programming for AI
-- LLM fundamentals and APIs
-- Prompt engineering
-- Building RAG applications
-- Creating AI agents
-- Fine-tuning concepts
-- Deploying AI applications
-- Security best practices
+### What You've Achieved:
+- Strong Python foundation for AI
+- Deep understanding of LLMs
+- Advanced prompt engineering skills
+- Production-ready RAG applications
+- AI agent development
+- Deployment and security knowledge
+- Interview readiness
 
 ### Your Portfolio Should Include:
-1. CLI AI Assistant
-2. RAG Document Q&A Bot
-3. Research Assistant Agent
-4. Capstone Project
+1. Python fundamentals project
+2. API integration project
+3. Prompt engineering library
+4. LLM-powered API service
+5. RAG chatbot with evaluation
+6. AI agent suite
+7. Capstone project
 
 ### Next Steps:
-1. Keep building projects
-2. Contribute to open-source
+1. Keep building and experimenting
+2. Contribute to open-source AI projects
 3. Stay updated with AI news
-4. Apply for GenAI roles
+4. Apply for GenAI developer positions
 5. Join AI communities
-
-### Resources for Continued Learning:
-- OpenAI Documentation
-- LangChain Documentation
-- Hugging Face Courses
-- AI Twitter/X community
-- YouTube tutorials
 
 ---
 
-**Good luck with your GenAI career!**
+**Best of luck with your GenAI career!**
